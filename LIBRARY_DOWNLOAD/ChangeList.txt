@@ -1,0 +1,33 @@
+﻿
+[Overall]
+- matrix,vector,linear albegra package로 GSL대신 armadillo(arma.sourceforge.net)를 사용하였음. Armadillo는 계산 성능이 좋고, 특히 C++기반으로 operator overloading으로 직관적인 수학 expression이 가능함.
+- mbs_general과 mbs_math을 mwBase, mwMath로 개명하고 mwBase 폴더로 이동. mwBase는 motionWorks기본 정의 및 자료구조를 포함하는 폴더.
+- 대부분의 헤더 파일들 (loHeader.h 등) 삭제하였음. visHeader.h는 잔존하나 그 안에는 osg헤더 include만 남김.
+- MotionGraph는 개편에서 제외. 석원이 해주는 것으로 남김.
+
+[MBS]
+- mbsMultibodySystem파일에서 solver와 integrator class를 분리하여 mbsMultibodySystemSolver와 mbsMultibodySystemIntegrator 파일에 저장함. 
+- GlobalCoordArray와 LocalCoorArray가 각각 SafeCoordArray, CompactCoordArray로 개명됨.
+
+
+[BulletCharacter]
+- bCharacter를 bCharacter와 bCharacterSim으로 분리. bCharacterSim은 Bullet으로 시뮬레이션되는 character이고, bCharacter는 gMultibodySystem을 상속받으며 bCharacterSim을 제어하기 위하여 상태 정보(자세,속도,지면반력 등)를 측정하고, joint torque를 bCharacterSim에 적용하는 기능등을 가짐.
+- mbs spec file에 CHAIN_DEFINITION을 추가. bCharacter의 m_lFootIdx등을 사용할 경우 CHAIN_DEFINITION이 되어 있어야함
+
+ 
+[MocapProcessor]
+- MocapSkeletonToMBS는 mwMotionLoader로 이동
+- TODO
+	1) MotionKinematicFeature/DynamicFeature를 사용자가 이해하고 사용하기 쉽게 정리할 필요
+	2) Motion blending, dynamic time warping, foot skate cleaner 등 기능 추가 필요
+	
+
+[Visalizer]
+- gOsgSkin 클래스를 새로 만듦. gOsgSkin은 fbx등을 로드하여 osgAnimation에 담은 스킨 정보를 사용하도록 만든 클래스임.
+	
+	
+
+
+
+
+
