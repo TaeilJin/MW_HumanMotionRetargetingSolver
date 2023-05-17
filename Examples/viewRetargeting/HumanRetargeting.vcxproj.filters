@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\MW2\src\AMCLoader.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\bCharacter.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\bCharacterLoader.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\bCharacterSolver.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\bShapeSet.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\BVHLoader.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\FBXLoader.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gArmaUtil.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gBdOsgSystem.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gBdOsgUtil.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gBdUtil.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gBdVisSystem.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gBspline.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gEventHandler.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gForces.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gMath.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gMbsUtil.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gMultibodySystem.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gMultibodySystemIntegrator.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gMultibodySystemSolver.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gOsgShape.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gOsgSkin.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gOsgUtil.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gRigidBodies.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\LoaderBase.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\mgData.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\mgMBSUtil.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\mgMotionDynamicFeature.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\mgMotionKinematicFeature.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\mgSkeleton.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\mgSkeletonToBCharacter.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\mgUtility.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\MotionLoader.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\Parser.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\spline1dFit.cpp">
+      <Filter>MW</Filter>
+    </ClCompile>
+    <ClCompile Include="mgPoseTransfer.cpp" />
+    <ClCompile Include="main_retargetMotion.cpp" />
+    <ClCompile Include="EX4_retargetmotion.cpp" />
+    <ClCompile Include="saveBVH.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MW">
+      <UniqueIdentifier>{9cf03dcb-5ff8-4e62-a407-677666ff775e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mgPoseTransfer.h" />
+    <ClInclude Include="EX4_retargetmotion.h" />
+  </ItemGroup>
+</Project>

@@ -148,6 +148,55 @@ public:
 	inline	void	setUnit(MW_UNIT unit) { _unit = unit; }
 	//}
 
+	//// TAEIL 
+
+	/// Leg indices: list of link indices from pelvis to the foot. Used for computing Leg Jacobian.
+	std::vector<int>	m_lLegIdx;
+	std::vector<int>	m_rLegIdx;
+	/// Arm indices: list of link indices from chest to the hand. 
+	std::vector<int>	m_lArmIdx;
+	std::vector<int>	m_rArmIdx;
+	/// Trunk indices: list of link indices from pelvis to the chest 
+	std::vector<int>	m_trunkIdx;
+	/// Head indices: list of link indices from chest to the head 
+	std::vector<int>	m_headIdx;
+
+	
+	bool inLLeg(int linkIdx)
+	{
+		std::vector<int>::iterator it = std::find(m_lLegIdx.begin(), m_lLegIdx.end(), linkIdx);
+		if (it != m_lLegIdx.end()) return true;
+		return false;
+	}
+
+	bool inRLeg(int linkIdx)
+	{
+		std::vector<int>::iterator it = std::find(m_rLegIdx.begin(), m_rLegIdx.end(), linkIdx);
+		if (it != m_rLegIdx.end()) return true;
+		return false;
+	}
+
+	bool inLArm(int linkIdx)
+	{
+		std::vector<int>::iterator it = std::find(m_lArmIdx.begin(), m_lArmIdx.end(), linkIdx);
+		if (it != m_lArmIdx.end()) return true;
+		return false;
+	}
+
+	bool inRArm(int linkIdx)
+	{
+		std::vector<int>::iterator it = std::find(m_rArmIdx.begin(), m_rArmIdx.end(), linkIdx);
+		if (it != m_rArmIdx.end()) return true;
+		return false;
+	}
+
+	bool inTrunk(int linkIdx)
+	{
+		std::vector<int>::iterator it = std::find(m_trunkIdx.begin(), m_trunkIdx.end(), linkIdx);
+		if (it != m_trunkIdx.end()) return true;
+		return false;
+	}
+
 	//{coordinates in individual links
 
 			/// set coordinates to every link to zero

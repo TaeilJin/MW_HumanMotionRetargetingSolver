@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\MW2dyn\src\bCharacter.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\bCharacterLoader.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\bCharacterSolver.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\bShapeSet.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\gBdOsgSystem.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\gBdOsgUtil.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\gBdUtil.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\gBdVisSystem.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\gForces.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\gMbsUtil.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\gMultibodySystem.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\gMultibodySystemIntegrator.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\gMultibodySystemSolver.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\gRigidBodies.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\MBSLoader.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\mgMBSUtil.cpp" />
+    <ClCompile Include="..\..\MW2dyn\src\mgSkeletonToBCharacter.cpp" />
+    <ClCompile Include="..\..\MW2\src\AMCLoader.cpp" />
+    <ClCompile Include="..\..\MW2\src\BVHLoader.cpp" />
+    <ClCompile Include="..\..\MW2\src\FBXLoader.cpp" />
+    <ClCompile Include="..\..\MW2\src\gArmaUtil.cpp" />
+    <ClCompile Include="..\..\MW2\src\gBspline.cpp" />
+    <ClCompile Include="..\..\MW2\src\gEventHandler.cpp" />
+    <ClCompile Include="..\..\MW2\src\gMath.cpp" />
+    <ClCompile Include="..\..\MW2\src\gOsgShape.cpp" />
+    <ClCompile Include="..\..\MW2\src\gOsgSkin.cpp" />
+    <ClCompile Include="..\..\MW2\src\gOsgUtil.cpp" />
+    <ClCompile Include="..\..\MW2\src\LoaderBase.cpp" />
+    <ClCompile Include="..\..\MW2\src\mgData.cpp" />
+    <ClCompile Include="..\..\MW2\src\mgMotionDynamicFeature.cpp" />
+    <ClCompile Include="..\..\MW2\src\mgMotionKinematicFeature.cpp" />
+    <ClCompile Include="..\..\MW2\src\mgSkeleton.cpp" />
+    <ClCompile Include="..\..\MW2\src\mgUtility.cpp" />
+    <ClCompile Include="..\..\MW2\src\MotionLoader.cpp" />
+    <ClCompile Include="..\..\MW2\src\Parser.cpp" />
+    <ClCompile Include="..\..\MW2\src\spline1dFit.cpp" />
+    <ClCompile Include="mgPoseTransfer_IK.cpp" />
+    <ClCompile Include="poseIK.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mgPoseTransfer_IK.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{AE81D6C5-1290-4F98-81ED-6E81AB69CF60}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>poseIK</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>poseIK</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseIntelMKL>No</UseIntelMKL>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseIntelMKL>No</UseIntelMKL>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\code\MotionWorks\Libraries\OpenSceneGraph_361\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\code\MotionWorks\Libraries\OpenSceneGraph_361\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(ProjectDir)..\..\Libraries\OpenSceneGraph_354\lib_x64\vs2015;$(ProjectDir)..\..\Libraries\lib_x64\msvc2015;$(ProjectDir)..\..\Libraries\bt\lib;$(ProjectDir)..\..\Libraries\lapack\lib;$(ProjectDir)..\..\Libraries\LEVMAR\lib_x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)..\..\Libraries\OpenSceneGraph_354\include;$(ProjectDir)..\..\Libraries\bt\include;$(ProjectDir)..\..\MW2\include;$(ProjectDir)..\..\MW2dyn\include;$(ProjectDir)..\..\Libraries\armadillo;$(ProjectDir)..\..\Libraries\LEVMAR\include;$(ProjectDir)..\..\Libraries\IGL\include;$(ProjectDir)..\..\Libraries\IGL\external\eigen;$(IncludePath)</IncludePath>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\..\Libraries\OpenSceneGraph_354\include;$(ProjectDir)..\..\Libraries\bt\include;$(ProjectDir)..\..\MW2\include;$(ProjectDir)..\..\MW2dyn\include;$(ProjectDir)..\..\Libraries\armadillo;$(ProjectDir)..\..\Libraries\LEVMAR\include;$(ProjectDir)..\..\Libraries\IGL\include;$(ProjectDir)..\..\Libraries\IGL\external\eigen;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\Libraries\OpenSceneGraph_354\lib_x64\vs2015;$(ProjectDir)..\..\Libraries\lib_x64\msvc2015;$(ProjectDir)..\..\Libraries\bt\lib;$(ProjectDir)..\..\Libraries\lapack\lib;$(ProjectDir)..\..\Libraries\LEVMAR\lib_x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_WIN32_WINNT=0x0A00;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;MW_USE_DOUBLE_PRECISION;MBS_USE_COLLISION_MANIFOLD;BT_USE_DOUBLE_PRECISION;_USE_MATH_DEFINES;NOMINMAX;HAVE_ISNAN;ARMA_USE_LAPACK;ARMA_USE_BLAS;ARMA_DONT_USE_OPENMP;ARMA_32BIT_WORD;UNITY_MW_DLL_TEST_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4589;4706;4127;4100;4018;4189;4244</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\;C:\Users\hayle\Desktop\Github_MWDLL_2\LEVMAR\include</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OpenThreadsd.lib;osgd.lib;osgAnimationd.lib;osgDBd.lib;osgFXd.lib;osgGAd.lib;osgManipulatord.lib;osgShadowd.lib;osgTextd.lib;osgUtild.lib;osgViewerd.lib;opengl32.lib;glu32.lib;BulletCollision_debug.lib;LinearMath_debug.lib;BulletDynamics_debug.lib;blas_win64_MT.lib;lapack_win64_MT.lib;levmar.lib;levmard.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\hayle\Desktop\Github_MWDLL_2\LEVMAR\lib_x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;WIN32;_WINDOWS;_WIN32_WINNT=0x0A00;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;MW_USE_DOUBLE_PRECISION;MBS_USE_COLLISION_MANIFOLD;BT_USE_DOUBLE_PRECISION;_USE_MATH_DEFINES;NOMINMAX;HAVE_ISNAN;ARMA_USE_LAPACK;ARMA_USE_BLAS;ARMA_NO_DEBUG;ARMA_DONT_USE_OPENMP;ARMA_32BIT_WORD;UNITY_MW_DLL_TEST_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4018;4267;</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OpenThreads.lib;osg.lib;osgAnimation.lib;osgDB.lib;osgFX.lib;osgGA.lib;osgManipulator.lib;osgShadow.lib;osgText.lib;osgUtil.lib;osgViewer.lib;opengl32.lib;glu32.lib;BulletCollision.lib;LinearMath.lib;BulletDynamics.lib;lapack_win64_MT.lib;blas_win64_MT.lib;levmar.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

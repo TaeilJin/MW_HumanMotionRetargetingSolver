@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="MW2">
+      <UniqueIdentifier>{580150db-1412-4967-8b98-33f395e43894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MW2Dyn">
+      <UniqueIdentifier>{b8887a28-70ba-40c2-aab3-2e957d1307da}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\MW2\src\AMCLoader.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\BVHLoader.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\FBXLoader.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gArmaUtil.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gBspline.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gEventHandler.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gMath.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gOsgShape.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gOsgSkin.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\gOsgUtil.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\LoaderBase.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\mgData.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\mgMotionDynamicFeature.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\mgMotionKinematicFeature.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\mgSkeleton.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\mgUtility.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\MotionLoader.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\Parser.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2\src\spline1dFit.cpp">
+      <Filter>MW2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gBdOsgSystem.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gBdOsgUtil.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gBdUtil.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gBdVisSystem.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gForces.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gMbsUtil.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gMultibodySystem.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gMultibodySystemIntegrator.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gMultibodySystemSolver.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\gRigidBodies.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\mgMBSUtil.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\mgSkeletonToBCharacter.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\bCharacter.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\bCharacterLoader.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\bCharacterSolver.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MW2dyn\src\bShapeSet.cpp">
+      <Filter>MW2Dyn</Filter>
+    </ClCompile>
+    <ClCompile Include="mgPoseTransfer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\adaptEnvMotion\EX4_retargetmotion.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\adaptEnvMotion\main_retargetMotion.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mgPoseTransfer.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\adaptEnvMotion\EX4_retargetmotion.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
